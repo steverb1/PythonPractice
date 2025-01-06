@@ -2,7 +2,7 @@ from teach04 import calculate_velocity
 
 
 class Test_Teach04:
-    def test_teach04_1(self):
+    def test_teach04_example1(self):
         m = 5
         g = 9.8
         t = 10
