@@ -16,6 +16,8 @@ if second_number > first_number:
 else:
     print(f'The second number is not greater')
 
+print()
+
 my_favorite_animal = 'snake'
 
 user_favorite_animal = input('What is your favorite animal? ')
