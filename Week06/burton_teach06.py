@@ -34,39 +34,40 @@ def can_riders_ride(age1, height1, golden1, is_second_rider, age2 = None, height
             can_ride = False
     return can_ride
 
-# Notice the use of a boolean variable, set to False by default
-can_ride = False
-golden1 = None
-age2 = None
-height2 = None
-golden2 = None
+if __name__ == "__main__":
+    # Notice the use of a boolean variable, set to False by default
+    can_ride = False
+    golden1 = None
+    age2 = None
+    height2 = None
+    golden2 = None
 
-age1 = int(input("What is the age of the first rider? "))
-height1 = int(input("What is the height of the first rider? "))
+    age1 = int(input("What is the age of the first rider? "))
+    height1 = int(input("What is the height of the first rider? "))
 
-if age1 >= 12 and age1 < 18:
-    golden1 = input("Does this rider have a golden passport (yes/no)? ")
-    if golden1.lower() == 'yes':
-        golden1 = True
+    if age1 >= 12 and age1 < 18:
+        golden1 = input("Does this rider have a golden passport (yes/no)? ")
+        if golden1.lower() == 'yes':
+            golden1 = True
 
-is_second_rider = input("Is there a second rider (yes/no)? ")
-if is_second_rider.lower() == "yes":
-    is_second_rider = True
-else:
-    is_second_rider = False
+    is_second_rider = input("Is there a second rider (yes/no)? ")
+    if is_second_rider.lower() == "yes":
+        is_second_rider = True
+    else:
+        is_second_rider = False
 
-if is_second_rider:
-    age2 = int(input("What is the age of the second rider? "))
-    height2 = int(input("What is the height of the second rider? "))
+    if is_second_rider:
+        age2 = int(input("What is the age of the second rider? "))
+        height2 = int(input("What is the height of the second rider? "))
 
-    if age2 >= 12 and age2 < 18:
-        golden2 = input("Does this rider have a golden passport (yes/no)? ")
-        if golden2.lower() == 'yes':
-            golden2 = True
+        if age2 >= 12 and age2 < 18:
+            golden2 = input("Does this rider have a golden passport (yes/no)? ")
+            if golden2.lower() == 'yes':
+                golden2 = True
 
-can_ride = can_riders_ride(age1, height1, golden1, is_second_rider, age2, height2, golden2)
+    can_ride = can_riders_ride(age1, height1, golden1, is_second_rider, age2, height2, golden2)
 
-if can_ride:
-    print("Welcome to the ride. Please be safe and have fun!")
-else:
-    print("Sorry, you may not ride.")
+    if can_ride:
+        print("Welcome to the ride. Please be safe and have fun!")
+    else:
+        print("Sorry, you may not ride.")
