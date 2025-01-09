@@ -1,6 +1,5 @@
 """
 File: teach06_sample.py
-Author: Brother Burton
 
 Purpose: Amusement park ride requirements.
 """

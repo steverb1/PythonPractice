@@ -83,7 +83,8 @@ class Test_Teach06:
         have_second_rider = True
         rider2_age = 17
         rider2_height = 52
-        can_ride = can_riders_ride(rider1_age, rider1_height, has_golden_passport1, have_second_rider, rider2_age, rider2_height)
+        has_goldern_passport2 = False
+        can_ride = can_riders_ride(rider1_age, rider1_height, has_golden_passport1, have_second_rider, rider2_age, rider2_height, has_goldern_passport2)
         assert can_ride == False
 
     def test_stretch_rule2_single_rider_too_short_cannot_ride(self):
