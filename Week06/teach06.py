@@ -15,7 +15,7 @@ def can_riders_ride(rider1_age, rider1_height, has_golden_passport1, have_second
         elif rider1_age >= 12 and rider2_age >= 12 and rider1_height >= 52 and rider2_height >= 52:
             can_ride = True
         elif (rider1_age >= 16 and rider2_age >= 14) or (rider1_age >= 14 and rider2_age >= 16):
-            if rider1_height >= 52 and rider2_height >= 52:
+            if rider1_height >= 36 and rider2_height >= 36:
                 can_ride = True
     else:
         if rider1_age >= 18 and rider1_height >= 62:

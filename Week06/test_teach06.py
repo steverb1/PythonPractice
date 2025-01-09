@@ -77,11 +77,11 @@ class Test_Teach06:
         assert can_ride == False
 
     def test_stretch_rule1_too_short_cannot_ride(self):
-        rider1_age = 17
+        rider1_age = 13
         has_golden_passport1 = False
         rider1_height = 51
         have_second_rider = True
-        rider2_age = 17
+        rider2_age = 13
         rider2_height = 52
         has_goldern_passport2 = False
         can_ride = can_riders_ride(rider1_age, rider1_height, has_golden_passport1, have_second_rider, rider2_age, rider2_height, has_goldern_passport2)
@@ -114,14 +114,13 @@ class Test_Teach06:
         can_ride = can_riders_ride(rider1_age, rider1_height, has_golden_passport1, have_second_rider, rider2_age, rider2_height, has_golden_passport2)
         assert can_ride == True
 
-    # This is passing by accident. Without any guidance on height, stretch rule 3 is already covered by stretch rule 1.
     def test_stretch_rule3_double_riders_can_ride(self):
         rider1_age = 16
         has_golden_passport1 = False
-        rider1_height = 52
+        rider1_height = 36
         have_second_rider = True
         rider2_age = 14
-        rider2_height = 52
+        rider2_height = 36
         has_golden_passport2 = False
         can_ride = can_riders_ride(rider1_age, rider1_height, has_golden_passport1, have_second_rider, rider2_age, rider2_height, has_golden_passport2)
         assert can_ride == True
