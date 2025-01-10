@@ -2,7 +2,7 @@ import random
 
 
 magic_number = random.randint(1, 100)
-guess = int(input("What is your guess? "))
+guess = -1
 
 while guess != magic_number:
     if guess < magic_number:
