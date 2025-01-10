@@ -13,4 +13,4 @@ while guess != secret_word:
     num_guesses += 1
 
 print("Congratulations! You guessed it!")
-print(f"It took you {num_guesses} guesses!")
+print(f"It took you {num_guesses} guesses.")
