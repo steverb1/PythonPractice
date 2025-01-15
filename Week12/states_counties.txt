@@ -1,0 +1,88 @@
+Adams:50:Colorado
+Alamosa:40:Colorado
+Arapahoe:27:Colorado
+Archuleta:36:Colorado
+Baca:34:Colorado
+Bent:24:Colorado
+Boulder:21:Colorado
+Broomfield:4:Colorado
+Chaffee:31:Colorado
+Cheyenne:24:Colorado
+Clear Creek:22:Colorado
+Conejos:25:Colorado
+Costilla:29:Colorado
+Crowley:36:Colorado
+Custer:10:Colorado
+Delta:13:Colorado
+Denver:10:Colorado
+Dolores:42:Colorado
+Douglas:150:Colorado
+Eagle:31:Colorado
+El Paso:12:Colorado
+Elbert:8:Colorado
+Fremont:66:Colorado
+Garfield:52:Colorado
+Gilpin:5:Colorado
+Grand:48:Colorado
+Gunnison:12:Colorado
+Hinsdale:14:Colorado
+Huerfano:3:Colorado
+Jackson:9:Colorado
+Jefferson:1:Colorado
+Kiowa:4:Colorado
+Kit Carson:7:Colorado
+La Plata:3:Colorado
+Lake:3:Colorado
+Larimer:3:Colorado
+Las Animas:2:Colorado
+Lincoln:14:Colorado
+Logan:4:Colorado
+Beaverhead:28:Montana
+Big Horn:16:Montana
+Blaine:24:Montana
+Broadwater:21:Montana
+Carbon:28:Montana
+Carter:16:Montana
+Cascade:16:Montana
+Chouteau:13:Montana
+Custer:6:Montana
+Daniels:6:Montana
+Dawson:4:Montana
+Deer Lodge:4:Montana
+Fallon:5:Montana
+Fergus:3:Montana
+Flathead:6:Montana
+Gallatin:4:Montana
+Garfield:3:Montana
+Glacier:1:Montana
+Golden Valley:13:Montana
+Granite:5:Montana
+Hill:5:Montana
+Jefferson:3:Montana
+Judith:5:Montana
+Lake:1:Montana
+Lewis and Clark:1:Montana
+Liberty:1:Montana
+Lincoln:22:Montana
+Alamance:22:North Carolina
+Alexander:23:North Carolina
+Alleghany:7:North Carolina
+Anson:1:North Carolina
+Ashe:1:North Carolina
+Avery:1:North Carolina
+Beaufort:1:North Carolina
+Bertie:29:North Carolina
+Bladen:63:North Carolina
+Brunswick:16:North Carolina
+Buncombe:30:North Carolina
+Burke:1:North Carolina
+Cabarrus:9:North Carolina
+Caldwell:15:North Carolina
+Camden:10:North Carolina
+Adams:138:Ohio
+Allen:2:Ohio
+Androscoggin:8:Maine
+Aroostook:5:Maine
+Cumberland:1:Maine
+Franklin:1:Maine
+Hancock:1:Maine
