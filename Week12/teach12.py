@@ -1,17 +1,24 @@
 counties = []
 quantities = []
 states = []
+maximum = -1
+maximum_county = ''
+
+state_of_interest = input('Which state are you interested in? ')
 
 with open('states_counties.txt') as file:
     data = file.readlines()
     for line in data:
         line = line.strip().split(':')
-        counties.append(line[0])
-        quantities.append(int(line[1]))
-        states.append(line[2])
+        county = line[0]
+        quantity = int(line[1])
+        state = line[2]
 
-        print(f'State: {line[2]}, County: {line[0]}, Quantity: {line[1]}')
+        if state == state_of_interest:
+            print(f'State: {state}, County: {county}, Quantity: {quantity}')
+            if quantity > maximum:
+                maximum = quantity
+                maximum_county = county
     
-maximium = max(quantities)
-print(f'The county with the most courthouses is: {counties[quantities.index(maximium)]}')
-print(f'It has {maximium} courthouses.')
+print(f'The county with the most courthouses is: {maximum_county}')
+print(f'It has {maximum} courthouses.')
