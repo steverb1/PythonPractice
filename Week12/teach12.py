@@ -1,6 +1,3 @@
-counties = []
-quantities = []
-states = []
 maximum = -1
 maximum_county = ''
 
