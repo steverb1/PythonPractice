@@ -9,7 +9,13 @@ min_for_year = 999
 max_country = ''
 min_country = ''
 
+max_for_country = 0
+min_for_country = 999
+sum_for_country = 0
+count_for_country = 0
+
 year_of_interest = int(input('Enter the year of interest: '))
+country_of_interest = input('Enter the country of interest: ')
 print()
 
 with open('life-expectancy.csv') as file:
@@ -38,6 +44,14 @@ with open('life-expectancy.csv') as file:
                 min_country = country
             count_for_year += 1
 
+        if country == country_of_interest:
+            if expectancy > max_for_country:
+                max_for_country = expectancy
+            if expectancy < min_for_country:
+                min_for_country = expectancy
+            sum_for_country += expectancy
+            count_for_country += 1
+
 max_life_expectancy = max(expectancies)
 max_index = expectancies.index(max_life_expectancy)
 print('The overall max life expectancy is:', max_life_expectancy, 'from', countries[max_index], 'in', years[max_index])
@@ -51,3 +65,9 @@ print(f'For the year {year_of_interest}:')
 print(f'The average life expectancy across all countries was {sum_for_year / count_for_year:.2f}')
 print(f'The max life expectancy was in {max_country} with {max_for_year}')
 print(f'The min life expectancy was in {min_country} with {min_for_year}')
+
+print()
+print(f'For the country {country_of_interest}:')
+print(f'The max life expectancy was {max_for_country}')
+print(f'The min life expectancy was {min_for_country}')
+print(f'The average life expectancy was {sum_for_country / count_for_country:.2f}')
