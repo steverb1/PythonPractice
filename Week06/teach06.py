@@ -22,3 +22,28 @@ def can_riders_ride(rider1_age, rider1_height, has_golden_passport1, have_second
             can_ride = True
 
     return can_ride
+
+if __name__ == "__main__":
+    has_golden_passport1 = False
+    second_rider_age = None
+    second_rider_height = None
+    has_golden_passport2 = False
+
+    first_rider_age = int(input('What is the age of the first rider? '))
+    if first_rider_age >= 12 and first_rider_age <= 17:
+        has_golden_passport1 = input('Do you have a golden passport (y/n)? ').lower() == 'y'
+    first_rider_height = int(input("What is the height of the first rider? "))
+
+    have_second_rider = input("Is there a second rider (y/n)? ").lower() == 'y'
+    if have_second_rider:
+        second_rider_age = int(input("What is the age of the second rider? "))
+        if second_rider_age >= 12 and second_rider_age <= 17:
+            has_golden_passport2 = input('Do you have a golden passport (y/n)? ').lower() == 'y'
+        second_rider_height = int(input("What is the height of the second rider? "))
+
+    can_ride = can_riders_ride(first_rider_age, first_rider_height, has_golden_passport1, have_second_rider, second_rider_age, second_rider_height, has_golden_passport2)
+
+    if can_ride:
+        print("Welcome to the ride. Please be safe and have fun!")
+    else:
+        print("Sorry, you may not ride.")
