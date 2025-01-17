@@ -32,12 +32,20 @@ print()
 
 sum_for_year = 0
 count_for_year = 0
+max_for_year = 0
+min_for_year = 999
 index = 0
 for year in years:
     if year == year_of_interest:
         sum_for_year += expectancies[index]
+        if expectancies[index] > max_for_year:
+            max_for_year = expectancies[index]
+        if expectancies[index] < min_for_year:
+            min_for_year = expectancies[index]
         count_for_year += 1
     index += 1
 
 print(f'For the year {year_of_interest}:')
 print(f'The average life expectancy across all countries was {sum_for_year / count_for_year:.2f}')
+print(f'The max life expectancy was in {countries[expectancies.index(max_for_year)]} with {max_for_year}')
+print(f'The min life expectancy was in {countries[expectancies.index(min_for_year)]} with {min_for_year}')
