@@ -15,3 +15,12 @@ def determine_loan_approval(loan_size, credit_history, income, down_payment):
                 approved = True
 
     return approved
+
+if __name__ == "__main__":
+    loan_size = int(input("How large is the loan (1-10)? "))
+    credit_history = int(input("How good is the credit history (1-10)? "))
+    income = int(input("How high is your income (1-10)? "))
+    down_payment = int(input("How large is your down payment (1-10)? "))
+
+    approved = determine_loan_approval(loan_size, credit_history, income, down_payment)
+    print("Loan approved:", approved)
