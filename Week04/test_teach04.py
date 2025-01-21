@@ -11,8 +11,8 @@ class Test_Teach04:
         C = .5
         c, velocity = calculate_velocity(m, g, t, p, A, C)
         
-        assert c == '0.003'
-        assert velocity == '67.512'
+        assert round(c, 3) == 0.003
+        assert round(velocity, 3) == 67.512
 
     def test_teach04_bowling_ball_in_water(self):
         m = 7.3
@@ -23,8 +23,8 @@ class Test_Teach04:
         C = .5
         c, velocity = calculate_velocity(m, g, t, p, A, C)
         
-        assert c == '9.150'
-        assert velocity == '2.796'
+        assert round(c, 3) == 9.150
+        assert round(velocity, 3) == 2.796
 
     def test_teach04_sphere_on_jupiter(self):
         m = 5
@@ -35,8 +35,8 @@ class Test_Teach04:
         C = .5
         c, velocity = calculate_velocity(m, g, t, p, A, C)
         
-        assert c == '0.003'
-        assert velocity == '137.046'
+        assert round(c, 3) == 0.003
+        assert round(velocity, 3) == 137.046
 
     def test_teach04_bowling_ball_in_air_terminal_velocity(self):
         m = 7.3
@@ -51,5 +51,5 @@ class Test_Teach04:
         c2, velocity2 = calculate_velocity(m, g, t, p, A, C)
         
         assert c1 == c2
-        assert velocity1 == velocity2
+        assert round(velocity1, 3) == round(velocity2, 3)
         
