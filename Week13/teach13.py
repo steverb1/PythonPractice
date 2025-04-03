@@ -32,7 +32,7 @@ if __name__ == '__main__':
         elif shape == 'rectangle':
             length = float(input("Enter the length of the rectangle: "))
             width = float(input("Enter the width of the rectangle: "))
-            rectangle_area = compute_area_rectangle(length, width)
+            rectangle_area = compute_area(shape, length, width)
             print("The area of the rectangle is", rectangle_area)
         elif shape == 'circle':
             radius = float(input("Enter the radius of the circle: "))
