@@ -17,10 +17,10 @@ while True:
         item_name = input("What item would you like to add? ")
         items.append(item_name)
         print(f"'{item_name}' has been added to the cart.")
-    if action == 2:
+    elif action == 2:
         print("The contents of the shopping cart are:")
         for item in items:
             print(item)
-    if action == 5:
+    elif action == 5:
         print("Thank you. Goodbye.")
         break
