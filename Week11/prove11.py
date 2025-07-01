@@ -3,12 +3,8 @@ years = []
 expectancies = []
 
 with open('life-expectancy.csv') as file:
-    data = file.readlines()
-    first_line = True
-    for line in data:
-        if first_line:
-            first_line = False
-            continue
+    next(file)
+    for line in file:
         line = line.split(',')
         countries.append(line[0])
         years.append(int(line[2]))
